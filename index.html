@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playground</title>
+  <!-- CSSを読み込むため、以下のタグは削除しないでください -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <!-- このHTMLファイルは自由に編集していただいて構いません -->
+
+  <header class="header">
+    <!-- ヘッダー -->
+    <!-- ロゴ画像を必ず含めてください -->
+    <h1>
+      <img src="https://user-images.githubusercontent.com/102784267/233595829-c51a5555-5ec6-4697-b761-db2b8045ba9e.png">
+    </h1>
+
+    <div class="menubutton" onclick="toggle()">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#product">メニュー</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#access">店舗情報</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <section class="hero-area">
+    <!-- ヒーローエリア -->
+    <!-- キャッチコピーを必ず含めてください -->
+    <!-- 背景に画像を配置してください -->
+    <div class="title-area">
+      <h2 class="title">
+        懐かしの味をもう一度。
+      </h2>
+    </div>
+  </section>
+
+  <section class="product" id="product">
+    <!-- 商品紹介 -->
+    <h3>商品紹介</h3>
+    <div class="product-container">
+      <div>
+        <div class="product-body">
+          <figure class="product-thumb">
+            <img src="https://user-images.githubusercontent.com/102784267/233601083-5b2e3ea7-4594-437b-9b41-787fe7e4a138.png">
+          </figure>
+          <div class="product-text">
+            <h4>コッペパン（税込180円）</h4>
+            <p>
+              ツヤのあるふわふわのコッペパン。そのままでもやさしい甘みが自慢です。<br>
+              もちろん、ジャムをつけてもおいしくお召し上がりいただけます。<br>
+              （レジ横でジャムも販売しています）
+            </p>
+          </div>
+        </div>
+        <div class="product-body">
+          <figure class="product-thumb">
+            <img src="https://user-images.githubusercontent.com/102784267/233601091-95134e25-1c2f-4310-a3e2-22b2de8a2311.png">
+          </figure>
+          <div class="product-text">
+            <h4>ツイストパン （税込170円）</h4>
+            <p>
+              モチモチとした食感が味わえます。<br>
+              卵とバターの風味を強く感じられるところが当店のこだわりポイント。<br>
+              オーブントースターで1分ほど焼いてからお召し上がりいただくのがおすすめです。
+            </p>
+          </div>
+        </div>
+        <div class="product-body">
+          <figure class="product-thumb">
+            <img src="https://user-images.githubusercontent.com/102784267/233601076-1d532f0e-b089-48f6-a4f9-6f0a8838736e.png">
+          </figure>
+          <div class="product-text">
+            <h4>まるパン（税込160円）</h4>
+            <p>
+              あっさりとして素朴な味わいのシンプルなパンです。<br>
+              お好みでバターをつけたり、半分に割ってハンバーグやミネストローネと一緒に食べても最高です！
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <!-- お知らせ -->
+    <h3>お知らせ</h3>
+    <ul>
+      <li>
+        <time>2023.12.27</time>
+        <p>
+          給食パン屋第2号店オープン
+        </p>
+      </li>
+      <li>
+        <time>2023.12.27</time>
+        <p>
+          『2024福袋』を数量限定で販売します!
+        </p>
+      </li>
+      <li>
+        <time>2023.12.25</time>
+        <p>
+          ホームページを開設致しました。
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="access" id="access">
+    <!-- 店舗情報 -->
+    <h3>店舗情報</h3>
+    <div class="access_detail">
+      <img src="https://user-images.githubusercontent.com/102784267/233602759-8d23b6ac-9fd1-4f72-a002-a90fbb27e67e.png">
+      <ul>
+        <li><span class="material-symbols-outlined">storefront</span>給食ぱん屋</li>
+        <li><span class="material-symbols-outlined">location_on</span>東京都二五六区2-5-6</li>
+        <li><span class="material-symbols-outlined">call</span>00-1234-5678</li>
+        <li><span class="material-symbols-outlined">schedule</span>平日 9:00～18:00 / 祝日 9:00～16:00</li>
+        <li><span class="material-symbols-outlined">calendar_month</span>日曜 定休日</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <!-- お問い合わせ -->
+    <h2 id="c-title">お問い合わせ</h2>
+      <label for="name" id="l1">メールアドレス</label>
+      <input type="text" name="name">
+      <label for="phone">お電話番号</label>
+      <input type="text" name="phone">
+      <label for="cnt">お問い合わせ内容</label>
+      <textarea type="text" name="cnt"></textarea>
+      <button>送信</button>
+  </section>
+
+  <footer class="footer">
+    <!-- フッター -->
+    <!-- (c) 256times.com を必ず含めてください -->
+    <small>©️ 256times.com</small>
+  </footer>
+
+  <!-- JavaScriptの実装をする方は以下のタグを削除しないでください -->
+  <script src="js/main.js"></script>
+</body>
